@@ -24,6 +24,52 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .single-team {
+    position: relative;
+    overflow: hidden;
+}
+
+.blur-image {
+    transition: filter 0.3s ease-in-out;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: white !important;
+}
+
+.single-team:hover .blur-image {
+    filter: blur(5px); /* You can adjust the blur intensity */
+}
+
+.single-team:hover .overlay-text {
+    opacity: 1;
+}
+
+        /* Add your existing styles here */
+
+        /* Responsive Logo */
+        .logo img {
+            max-width: 80%;
+            height: auto;
+        }
+
+        /* Add a media query for larger screens if needed */
+        @media screen and (max-width: 768px) {
+            .logo img {
+                /* Adjust the max-width for larger screens */
+                max-width: 25%;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -104,7 +150,7 @@
         </div>
         <!-- Hero End -->
         <!--? About Start-->
-        <section class="about-area section-padding2">
+        <section class="about-area section-padding2" style="margin-bottom: -200px;">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-10">
@@ -135,6 +181,7 @@
                 </div>
             </div>
         </section>
+        
         <section class="about-area section-padding2">
             <div class="container">
                 <div class="row align-items-center">
@@ -163,6 +210,7 @@
             </div>
         </section>
         <!-- About  End-->
+       
         <!--? All startups Start -->
         <div class="starups-area testimonial-area fix">
             <!--left Contents  -->
@@ -193,6 +241,102 @@
             </div>
         </div>
         <!--All startups End -->
+         <!--? Team Start -->
+         <section class="team-area section-padding30"style="margin-bottom: -200px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle text-center mb-70">
+                            <span>Our Team</span>
+                            <h2>MEET THE VISIONARIES BEHIND OUR SUCCESS</h2>
+                        </div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- single Tem -->
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm- mx-auto">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/Yashantha.JPG" alt="" class="blur-image">
+                                <div class="overlay-text">
+                                    <p><b style="color: black;">25+ years shaping diverse sales environments. Committed to optimizing processes for enhanced organizational efficiency.</b></p>
+                                </div>
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="#">Yashantha Atukorala</a></h3>
+                                <span>Chief Operating Officer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- single Tem -->
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm- ">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/tony.jpg" alt="" class="blur-image">
+                                <div class="overlay-text">
+                                    <p><b style="color: black;">It's an absolute pleasure to join Ropa Constructions, a leading force in the real estate industry. With three decades of dedicated sales and marketing experience across diverse landscapes, I'm thrilled to bring my expertise to this dynamic team.
+                                    </b></p>
+                                </div>
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="#">Tony Devadasan</a></h3>
+                                <span>General Marketing and Sales Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm-">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/nishantha.jpeg" alt="" class="blur-image">
+                                <div class="overlay-text">
+                                    <p><b style="color: black;">18 years in building constructions, committed to bringing expertise and excellence to every project.</b></p>
+                                </div>
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="#">Nishanth Gamage</a></h3>
+                                <span>Deputy General Manager - Construction</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm- mx-auto">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/Asanka.jpeg" alt="" class="blur-image">
+                                <div class="overlay-text">
+                                    <p><b style="color: black;">9 years specializing in project cost efficiency. Dedicated to precise estimations and delivering on-budget outcomes.</b></p>
+                                </div>
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="#">Asanka Kularathne</a></h3>
+                                <span>Senior Quantity Surveyor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-sm- mx-auto">
+                        <div class="single-team mb-30">
+                            <div class="team-img">
+                                <img src="assets/img/gallery/Lalitha.jpeg" alt="" class="blur-image">
+                                <div class="overlay-text">
+                                    <p><b style="color: black;">14+ years in construction, with hands-on experience in various projects. Committed to delivering excellence in building, irrigation, and roadworks.</b></p>
+                                </div>
+                            </div>
+                            <div class="team-caption">
+                                <h3><a href="#">Lalitha Weerasiri</a></h3>
+                                <span>General Manager - Construction</span>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+        <!-- Team End -->
        
     </main>
     <footer>
