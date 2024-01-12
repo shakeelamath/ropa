@@ -25,9 +25,23 @@
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
     <style>
+        
         .single-team {
     position: relative;
     overflow: hidden;
+}
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.team-img:hover .hover-image {
+    opacity: 1;
 }
 
 .blur-image {
@@ -249,7 +263,8 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 col-sm- mx-auto">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="assets/img/gallery/Yashantha.jpg" alt="" class="blur-image">
+                                <img src="assets/img/gallery/Yashantha.jpg" alt="" class="normal-image">
+                                <img src="assets/img/gallery/whitebg.jpg" alt="" class="hover-image">
                                 <div class="overlay-text">
                                     <p><b style="color: black;">25+ years shaping diverse sales environments. Committed to optimizing processes for enhanced organizational efficiency.</b></p>
                                 </div>
@@ -266,7 +281,9 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm- ">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="assets/img/gallery/tony.jpg" alt="" class="blur-image">
+                                <img src="assets/img/gallery/tony.jpg" alt="" class="normal-image">
+                                <img src="assets/img/gallery/whitebg.jpg" alt="" class="hover-image">
+
                                 <div class="overlay-text">
                                     <p><b style="color: black;">It's an absolute pleasure to join Ropa Constructions, a leading force in the real estate industry. With three decades of dedicated sales and marketing experience across diverse landscapes, I'm thrilled to bring my expertise to this dynamic team.
                                     </b></p>
@@ -283,7 +300,9 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm-">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="assets/img/gallery/nishantha.jpeg" alt="" class="blur-image">
+                                <img src="assets/img/gallery/nishantha.jpeg" alt="" class="normal-image">
+                                <img src="assets/img/gallery/whitebg.jpg" alt="" class="hover-image">
+
                                 <div class="overlay-text">
                                     <p><b style="color: black;">18 years in building constructions, committed to bringing expertise and excellence to every project.</b></p>
                                 </div>
@@ -298,7 +317,9 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm- mx-auto">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="assets/img/gallery/Asanka.jpeg" alt="" class="blur-image">
+                                <img src="assets/img/gallery/Asanka.jpeg" alt="" class="normal-image">
+                                <img src="assets/img/gallery/whitebg.jpg" alt="" class="hover-image">
+
                                 <div class="overlay-text">
                                     <p><b style="color: black;">9 years specializing in project cost efficiency. Dedicated to precise estimations and delivering on-budget outcomes.</b></p>
                                 </div>
@@ -312,7 +333,9 @@
                     <div class="col-xl-3 col-lg-4 col-md-6 col-sm- mx-auto">
                         <div class="single-team mb-30">
                             <div class="team-img">
-                                <img src="assets/img/gallery/Lalitha.jpeg" alt="" class="blur-image">
+                                <img src="assets/img/gallery/Lalitha.jpeg" alt="" class="normal-image">
+                                <img src="assets/img/gallery/whitebg.jpg" alt="" class="hover-image">
+
                                 <div class="overlay-text">
                                     <p><b style="color: black;">14+ years in construction, with hands-on experience in various projects. Committed to delivering excellence in building, irrigation, and roadworks.</b></p>
                                 </div>
@@ -398,6 +421,7 @@
     </div>
 
     <!-- JS here -->
+    
 
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->
