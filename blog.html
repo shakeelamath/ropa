@@ -24,6 +24,12 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+
 </head>
 <body>
     <!-- ? Preloader Start -->
@@ -121,119 +127,119 @@
                                     
                                 </div>
                             </article>
+                           
                             
+                           
+                             <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <div class="slideshow-container">
+                                        <img class="mySlides card-img rounded-0" src="assets/img/blog/blog1.1.jpg" alt="">
+                                        <img class="mySlides card-img rounded-0" src="assets/img/blog/blog1.2.jpg" alt="">
+                                        <img class="mySlides card-img rounded-0" src="assets/img/blog/blog1.3.jpg" alt="">
+                                        
+                                        <!-- Add more images as needed -->
+                                    </div>
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="#">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Skyward Bound: Our Ongoing 7-Storey Marvel in Wellawatta!</h2>
+                                    </a>
+                                    <p>Once again, we soar to new heights at Sinsapa Road Wellawatte – an 18,200 sqft project seamlessly blending luxury living with hospitality.</p>
+                                    
+                                </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <div class="slideshow-container">
+                                        <img class="mySlides card-img rounded-0" src="assets/img/blog/blog1.1.jpg" alt="">
+                                        <img class="mySlides card-img rounded-0" src="assets/img/blog/blog1.2.jpg" alt="">
+                                        <img class="mySlides card-img rounded-0" src="assets/img/blog/blog1.3.jpg" alt="">
+                                        <!-- Add more images as needed -->
+                                    </div>
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="#">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Master Guide's Knowledge Sharing Centre and Bookshop Emerges in Kelaniya</h2>
+                                    </a>
+                                    <p>In collaboration with Master Guide, we're proud to unveil a 7-floor Knowledge Sharing Centre and Bookshop in Kelaniya, spanning 34,700 sqft. A testament to our dedication to education, innovation, and community enrichment.</p>
+                                    
+                                </div>
+                            </article>
                             <script>
-                                var slideIndex = 0;
-                                showSlides();
+                                var slideshowContainers = document.querySelectorAll(".slideshow-container");
                             
                                 function showSlides() {
-                                    var i;
-                                    var slides = document.getElementsByClassName("mySlides");
-                                    for (i = 0; i < slides.length; i++) {
-                                        slides[i].style.display = "none";
-                                    }
-                                    slideIndex++;
-                                    if (slideIndex > slides.length) {
-                                        slideIndex = 1;
-                                    }
-                                    slides[slideIndex - 1].style.display = "block";
-                                    setTimeout(showSlides, 2000); // Change slide every 2 seconds
+                                    slideshowContainers.forEach(function (container) {
+                                        var slides = container.getElementsByClassName("mySlides");
+                                        var currentSlideIndex = parseInt(container.getAttribute("data-slide-index")) || 0;
+                            
+                                        for (var i = 0; i < slides.length; i++) {
+                                            slides[i].style.display = "none";
+                                        }
+                            
+                                        currentSlideIndex++;
+                                        if (currentSlideIndex > slides.length) {
+                                            currentSlideIndex = 1;
+                                        }
+                            
+                                        slides[currentSlideIndex - 1].style.display = "block";
+                                        container.setAttribute("data-slide-index", currentSlideIndex);
+                                    });
+                            
+                                    setTimeout(showSlides, 2000);
                                 }
+                            
+                                document.addEventListener("DOMContentLoaded", function () {
+                                    showSlides();
+                                });
                             </script>
                             <article class="blog_item">
                                 <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="assets/img/blog/single_blog_2.png" alt="">
+                                    <div class="slideshow-container">
+                                       
+                                        <!-- Add more images as needed -->
+                                    </div>
+                                </div>
+                                <div class="blog_details">
+                                    <a class="d-inline-block" href="#">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Elegance Beyond Borders: Luxury Home in Borella!</h2>
+                                    </a>
+                                    <p>Step into opulence with our 3,120 sqft, 3-storey residence at Alwis Avenue Castle Street, Borella. A redefinition of luxury living.</p>
                                     
                                 </div>
+                            </article>
+                            <article class="blog_item">
+                                <div class="blog_item_img">
+                                    <div class="slideshow-container">
+                                        
+                                        <!-- Add more images as needed -->
+                                    </div>
+                                </div>
                                 <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                    <a class="d-inline-block" href="#">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Luxury Living in a 3-Storey Splendor in Mabale</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
+                                    <p>RO-PA Construction proudly presents another masterpiece, a stunning 3-storey house in Malabe, spanning 6,013 sqft.</p>
                                 </div>
                             </article>
                             <article class="blog_item">
                                 <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="assets/img/blog/single_blog_3.png" alt="">
-                                   
+                                    <div class="slideshow-container">
+                                        
+                                        <!-- Add more images as needed -->
+                                    </div>
                                 </div>
                                 <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                                    <a class="d-inline-block" href="#">
+                                        <h2 class="blog-head" style="color: #2d2d2d;">Farmtech Warehouse in Kolonnawa!</h2>
                                     </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
+                                    <p>Recognized for our stellar reputation in project execution, RO-PA Construction proudly takes on the Farmtech warehouse project. With multiple floors and a terrace, this 34,700 sqft space showcases our commitment to excellence.</p>
+                                    
                                 </div>
                             </article>
-                            <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="assets/img/blog/single_blog_4.png" alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                            <article class="blog_item">
-                                <div class="blog_item_img">
-                                    <img class="card-img rounded-0" src="assets/img/blog/single_blog_5.png" alt="">
-                                    <a href="#" class="blog_item_date">
-                                        <h3>15</h3>
-                                        <p>Jan</p>
-                                    </a>
-                                </div>
-                                <div class="blog_details">
-                                    <a class="d-inline-block" href="blog_details.html">
-                                        <h2 class="blog-head" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
-                                    </a>
-                                    <p>That dominion stars lights dominion divide years for fourth have don't stars is that
-                                        he earth it first without heaven in place seed it second morning saying.</p>
-                                    <ul class="blog-info-link">
-                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
-                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-                                    </ul>
-                                </div>
-                            </article>
-                            <nav class="blog-pagination justify-content-center d-flex">
-                                <ul class="pagination">
-                                    <li class="page-item">
-                                        <a href="#" class="page-link" aria-label="Previous">
-                                            <i class="ti-angle-left"></i>
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="#" class="page-link">1</a>
-                                    </li>
-                                    <li class="page-item active">
-                                        <a href="#" class="page-link">2</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a href="#" class="page-link" aria-label="Next">
-                                            <i class="ti-angle-right"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                            
+                            
+                            
                         </div>
                     </div>
                     
@@ -258,7 +264,7 @@
                                     </div>
                                     <div class="footer-tittle">
                                         <div class="footer-pera">
-                                            <p></p>
+                                            <p>Feel free to reach out to us with your inquiries, project proposals, or to discuss your construction needs. Our dedicated team is here to assist you every step of the way. Connect with us via phone or email, and let's build your vision together.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -309,6 +315,8 @@
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
     </div>
       <!-- JS here -->
+      
+    
 
       <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
       <!-- Jquery, Popper, Bootstrap -->
