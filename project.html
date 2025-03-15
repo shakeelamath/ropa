@@ -193,29 +193,27 @@
                     </div>
                     <div class="col-xl-col-lg-6 col-md-6 col-sm-6">
                         <div class="single-cat mb-110">
-                            <img src="assets/img/gallery/warehouseProject1.jpg" alt="">
+                            <img id="slideshow1" src="assets/img/gallery/warehouseproject1.jpg" alt="">
                             <div class="img-cap">
-                                <h4>
-                                    Warehouse Project - 1
-                                    New site opening ceremony</h4>
-                                <p>Kalutara</p>
+                                <h4 id="caption1">Warehouse Project - 1<br>New site opening ceremony</h4>
+                                <p id="location1">Kalutara</p>
                             </div>
                         </div>
                     </div>
+                    
                     <div class="col-xl-col-lg-6 col-md-6 col-sm-6">
                         <div class="single-cat mb-110">
-                            <img src="assets/img/gallery/warehouseproject3.jpg" alt="">
+                            <img id="slideshow2" src="assets/img/gallery/warehouseproject3.jpg" alt="">
                             <div class="img-cap">
-                                <h4>
-                                    Warehouse Project - 2
-                                    New site opening ceremony</h4>
-                                <p>Kalutara</p>
+                                <h4 id="caption2">Warehouse Project - 2<br>New site opening ceremony</h4>
+                                <p id="location2">Kalutara</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-col-lg-12 col-md-6 col-sm-6">
+                    
+                    <div class="col-xl-col-lg-6 col-md-6 col-sm-6">
                         <div class="single-cat mb-110">
-                            <img src="assets/img/gallery/warehouseproject2.jpg" alt="">
+                            <img id="slideshow3" src="assets/img/gallery/warehouseproject2.jpg" alt="">
                             <div class="img-cap">
                                 <h4>
                                     Warehouse and commercial building project-  New site opening ceremony</h4>
@@ -228,6 +226,52 @@
         </section>
         <!-- Popular Work End -->
     </main>
+    <script>
+        const slideshows = [
+            {
+                imgId: "slideshow1",
+                captionId: "caption1",
+                locationId: "location1",
+                images: [
+                    { src: "assets/img/gallery/warehouseproject1.jpg", caption: "Warehouse Project - 1<br>New site opening ceremony", location: "Kalutara" },
+                    { src: "assets/img/gallery/warehouse1.1.jpg", caption: "Warehouse Project - 1<br>New site opening ceremony", location: "Kalutara" },
+                    { src: "assets/img/gallery/warehouse1.3.jpg", caption: "Warehouse Project - 1<br>New site opening ceremony", location: "Kalutara" }
+                ]
+            },
+            {
+                imgId: "slideshow2",
+                captionId: "caption2",
+                locationId: "location2",
+                images: [
+                    { src: "assets/img/gallery/warehouseproject3.jpg", caption: "Warehouse Project - 2<br>New site opening ceremony", location: "Kalutara" },
+                    { src: "assets/img/gallery/warehouse3.1.jpg", caption: "Warehouse Project - 2<br>New site opening ceremony", location: "Kalutara" },
+                    { src: "assets/img/gallery/warehouse3.3.jpg", caption: "Warehouse Project - 2<br>New site opening ceremony", location: "Kalutara" }
+                ]
+            },
+            {
+                imgId: "slideshow3",
+                captionId: "caption3",
+                locationId: "location3",
+                images: [
+                    { src: "assets/img/gallery/warehouseproject2.jpg", caption: "Warehouse Project - 2<br>New site opening ceremony", location: "Kelaniya" },
+                    { src: "assets/img/gallery/warehouse2.2.jpg", caption: "Warehouse Project - 2<br>New site opening ceremony", location: "Kelaniya" },
+                    { src: "assets/img/gallery/warehouse2.3.jpg", caption: "Warehouse Project - 2<br>New site opening ceremony", location: "Kelaniya" }
+                ]
+            }
+        ];
+    
+        function startSlideshow(slideshow) {
+            let index = 0;
+            setInterval(() => {
+                index = (index + 1) % slideshow.images.length;
+                document.getElementById(slideshow.imgId).src = slideshow.images[index].src;
+                document.getElementById(slideshow.captionId).innerHTML = slideshow.images[index].caption;
+                document.getElementById(slideshow.locationId).innerText = slideshow.images[index].location;
+            }, 3000);
+        }
+    
+        slideshows.forEach(startSlideshow);
+    </script>
     <footer>
         <!-- Footer Start-->
         <div class="footer-area footer-padding section-bg" data-background="assets/img/gallery/footer_bg.png">
